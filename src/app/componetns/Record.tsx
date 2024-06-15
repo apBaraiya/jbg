@@ -20,37 +20,21 @@ const Record = () => {
               <div className="record_box d-flex align-items-center justify-content-center gap-4">
                 <div className="hexagon overflow-hidden p-1 d-md-block d-none hover-zoom">
                   <img
-                    src="./img/Records/limca_1.jpg"
+                    src="./img/Records/limca_1.webp"
                     className="img-fluid d-inline-block w-100 h-100"
                     alt=""
                   />
                 </div>
                 <div className="hexagon overflow-hidden p-1 d-md-block d-none hover-zoom">
                   <img
-                    src="./img/Records/limca_3.jpg"
+                    src="./img/Records/limca_3.webp"
                     className="img-fluid d-inline-block w-100 h-100"
                     alt=""
                   />
                 </div>
                 <div className="hexagon overflow-hidden p-1 hover-zoom">
                   <img
-                    src="./img/Records/limca_10.jpg"
-                    className="img-fluid d-inline-block w-100 h-100"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="record_box d-flex align-items-center justify-content-center gap-4">
-                <div className="hexagon overflow-hidden p-1 hover-zoom">
-                  <img
-                    src="./img/Records/redfm_1.jpg"
-                    className="img-fluid d-inline-block w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div className="hexagon overflow-hidden p-1 hover-zoom">
-                  <img
-                    src="./img/Records/redfm_4.jpg"
+                    src="./img/Records/limca_10.webp"
                     className="img-fluid d-inline-block w-100 h-100"
                     alt=""
                   />
@@ -59,7 +43,23 @@ const Record = () => {
               <div className="record_box d-flex align-items-center justify-content-center gap-4">
                 <div className="hexagon overflow-hidden p-1 hover-zoom">
                   <img
-                    src="./img/Records/certificate.jpg"
+                    src="./img/Records/redfm_1.webp"
+                    className="img-fluid d-inline-block w-100 h-100"
+                    alt=""
+                  />
+                </div>
+                <div className="hexagon overflow-hidden p-1 hover-zoom">
+                  <img
+                    src="./img/Records/redfm_4.webp"
+                    className="img-fluid d-inline-block w-100 h-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="record_box d-flex align-items-center justify-content-center gap-4">
+                <div className="hexagon overflow-hidden p-1 hover-zoom">
+                  <img
+                    src="./img/Records/certificate.webp"
                     className="img-fluid d-inline-block w-100 h-100"
                     alt=""
                   />

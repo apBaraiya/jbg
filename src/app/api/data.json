@@ -2,7 +2,7 @@
   "locations": [
     {
       "id": 1,
-      "img": "../img/location/rajkot.jpg",
+      "img": "../img/location/rajkot.webp",
       "title": "Rajkot (Main Branch)",
       "desc": "Shop No. 7/8, Shiv Ashish Complex, Opp. Mahila College, Above Under Bridge, Kalawad Road, Rajkot, Gujarat - 360005.",
       "navbtn": {
@@ -17,7 +17,7 @@
     },
     {
       "id": 2,
-      "img": "../img/location/surat.jpeg",
+      "img": "../img/location/surat.webp",
       "title": "surat",
       "desc": "Shop no. 5/6, Suryoday Complex, Near D-mart, Kalpana Chavla Rd, Adajan, Surat, Gujarat 395009.",
       "navbtn": {
@@ -33,7 +33,7 @@
     },
     {
       "id": 3,
-      "img": "../img/location/surat2.jpg",
+      "img": "../img/location/surat2.webp",
       "title": "surat",
       "desc": "Shop No.47, Avalon The Commercial Hub , Amba Talavadi, Opp. Ankur School, Nr. P Samaj Wadi, Katar Gam, Surat-39005.",
       "navbtn": {
@@ -48,7 +48,7 @@
     },
     {
       "id": 4,
-      "img": "../img/location/Ahmedabad shop.jpg",
+      "img": "../img/location/Ahmedabad shop.webp",
       "title": "Ahmedabad",
       "desc": " Frizbee, E-4 opp. Tea Post, Sindhu Bhavan Road, Ahmedabad.",
       "navbtn": {
@@ -64,7 +64,7 @@
     },
     {
       "id": 5,
-      "img": "../img/location/vrajvihar.jpeg",
+      "img": "../img/location/vrajvihar.webp",
       "title": "Ahmedabad",
       "desc": "Shop 9, 6, Prernatirth Derasar Rd, Vraj Vihar, Jodhpur Village, Ahmedabad, Gujarat 380015.",
       "navbtn": {
@@ -80,7 +80,7 @@
     },
     {
       "id": 6,
-      "img": "../img/location/ahm2.jpeg",
+      "img": "../img/location/ahm2.webp",
       "title": "Ahmedabad",
       "desc": "Shivam Complex, Science City Rd, Sola, Ahmedabad, Gujarat 380060.",
       "navbtn": {
@@ -96,7 +96,7 @@
     },
     {
       "id": 7,
-      "img": "../img/location/ahm2.jpeg",
+      "img": "../img/location/ahm2.webp",
       "title": "Ahmedabad",
       "desc": "Shivam Complex, Science City Rd, Sola, Ahmedabad, Gujarat 380060.",
       "navbtn": {
@@ -112,7 +112,7 @@
     },
     {
       "id": 8,
-      "img": "../img/location/morbi.jpeg",
+      "img": "../img/location/morbi.webp",
       "title": "Morbi",
       "desc": "Ravapar Rd, Bombay Complex, Near Nilkath Vidhyalaya, Morbi, Gujarat 363641.",
       "navbtn": {
@@ -129,107 +129,107 @@
   "golas": [
     {
       "id": 1,
-      "gola_img": "../img/gola/blueberry_golo.jpeg",
+      "gola_img": "../img/gola/blueberry_golo.webp",
       "gola_name": "Blueberry"
     },
     {
       "id": 2,
-      "gola_img": "../img/gola/Colaram_golo.jpeg",
+      "gola_img": "../img/gola/Colaram_golo.webp",
       "gola_name": "Colaram"
     },
     {
       "id": 3,
-      "gola_img": "../img/gola/falsha_golo.jpeg",
+      "gola_img": "../img/gola/falsha_golo.webp",
       "gola_name": "falsha"
     },
     {
       "id": 4,
-      "gola_img": "../img/gola/blueberry-2_golo.jpeg",
+      "gola_img": "../img/gola/blueberry-2_golo.webp",
       "gola_name": "Blueberry"
     },
     {
       "id": 5,
-      "gola_img": "../img/gola/Rajwadi_golo.jpeg",
+      "gola_img": "../img/gola/Rajwadi_golo.webp",
       "gola_name": "Rajwadi"
     },
     {
       "id": 6,
-      "gola_img": "../img/gola/Cranberry_golo.jpeg",
+      "gola_img": "../img/gola/Cranberry_golo.webp",
       "gola_name": "Cranberry"
     },
     {
       "id": 7,
-      "gola_img": "../img/gola/chocobar_gola.jpg",
+      "gola_img": "../img/gola/chocobar_gola.webp",
       "gola_name": "Chocobar Gola"
     },
     {
       "id": 8,
-      "gola_img": "../img/gola/choco-ball_gola.jpg",
+      "gola_img": "../img/gola/choco-ball_gola.webp",
       "gola_name": "Choco Ball Gola"
     },
     {
       "id": 9,
-      "gola_img": "../img/gola/choco-sundae_golo.jpg",
+      "gola_img": "../img/gola/choco-sundae_golo.webp",
       "gola_name": "Choco Sundae Gola"
     },
     {
       "id": 10,
-      "gola_img": "../img/gola/cool-brownie_gola.jpg",
+      "gola_img": "../img/gola/cool-brownie_gola.webp",
       "gola_name": "Cool Brownie Gola"
     },
     {
       "id": 11,
-      "gola_img": "../img/gola/ferreor_rocher_golo.jpg",
+      "gola_img": "../img/gola/ferreor_rocher_golo.webp",
       "gola_name": "Ferrero Rocher Gola"
     },
     {
       "id": 12,
-      "gola_img": "../img/gola/kachikeri&rose_golo.jpg",
+      "gola_img": "../img/gola/kachikeri&rose_golo.webp",
       "gola_name": "Plain Kachikeri And Rose Gola"
     },
     {
       "id": 13,
-      "gola_img": "../img/gola/kachikeri_golo.jpg",
+      "gola_img": "../img/gola/kachikeri_golo.webp",
       "gola_name": "Plain Kachikeri Gola"
     },
     {
       "id": 14,
-      "gola_img": "../img/gola/krackjack_golo.jpg",
+      "gola_img": "../img/gola/krackjack_golo.webp",
       "gola_name": "Krackjack Gola"
     },
     {
       "id": 15,
-      "gola_img": "../img/gola/mava-malay-cadberry_golo.jpg",
+      "gola_img": "../img/gola/mava-malay-cadberry_golo.webp",
       "gola_name": "Dry Fruit Cream Mava Malai Canberry Gola"
     },
     {
       "id": 16,
-      "gola_img": "../img/gola/orange_golo.jpg",
+      "gola_img": "../img/gola/orange_golo.webp",
       "gola_name": "Plain Orange Gola"
     },
     {
       "id": 17,
-      "gola_img": "../img/gola/orio_golo.jpg",
+      "gola_img": "../img/gola/orio_golo.webp",
       "gola_name": "Orio Gola"
     },
     {
       "id": 18,
-      "gola_img": "../img/gola/pineapple_gola.jpg",
+      "gola_img": "../img/gola/pineapple_gola.webp",
       "gola_name": "Plain Pineapple Gola"
     },
     {
       "id": 19,
-      "gola_img": "../img/gola/rose-petals_golo.jpg",
+      "gola_img": "../img/gola/rose-petals_golo.webp",
       "gola_name": "Cream Mava Malay Rose Petals Gola"
     },
     {
       "id": 20,
-      "gola_img": "../img/gola/strawberry_golo.jpg",
+      "gola_img": "../img/gola/strawberry_golo.webp",
       "gola_name": "Plain Strawberry Gola"
     },
     {
       "id": 21,
-      "gola_img": "../img/gola/tiranga_golo.jpg",
+      "gola_img": "../img/gola/tiranga_golo.webp",
       "gola_name": "Plain Tirnaga Gola"
     }
   ]

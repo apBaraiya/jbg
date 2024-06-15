@@ -4,8 +4,8 @@ import "../../public/css/slider.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./componetns/Navbar";
-import Footer from "./componetns/Footer";
+import Navbar from "./Componetns/Navbar";
+import Footer from "./Componetns/Footer";
 
 
 const inter = Inter({ subsets: ["latin"] });

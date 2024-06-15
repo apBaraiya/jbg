@@ -67,9 +67,9 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    href="/about"
+                    href="/About"
                     className={`nav-link ${
-                      pathname === "/about" ? "active" : ""
+                      pathname === "/About" ? "active" : ""
                     }`}
                   >
                     About Us
@@ -77,9 +77,9 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    href="/product"
+                    href="/Product"
                     className={`nav-link ${
-                      pathname === "/product" ? "active" : ""
+                      pathname === "/Product" ? "active" : ""
                     }`}
                   >
                     Our Product
@@ -87,9 +87,9 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    href="/franchise"
+                    href="/Franchise"
                     className={`nav-link ${
-                      pathname === "/franchise" ? "active" : ""
+                      pathname === "/Franchise" ? "active" : ""
                     }`}
                   >
                     Our Franchise
@@ -97,9 +97,9 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    href="/record"
+                    href="/Record"
                     className={`nav-link ${
-                      pathname === "/record" ? "active" : ""
+                      pathname === "/Record" ? "active" : ""
                     }`}
                   >
                     Record
@@ -107,9 +107,9 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    href="/video"
+                    href="/Video"
                     className={`nav-link ${
-                      pathname === "/video" ? "active" : ""
+                      pathname === "/Video" ? "active" : ""
                     }`}
                   >
                     Video

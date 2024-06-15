@@ -11,7 +11,7 @@ const page = () => {
           alt="i_love_jbg"
         />
         <img
-          src="./img/About/adi 4.jpg"
+          src="./img/About/about_baner_small.webp"
           className="img-fluid visible-mobile"
           alt="samll_i_love_jbg"
         />
