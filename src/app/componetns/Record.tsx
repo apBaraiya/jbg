@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -19,49 +20,73 @@ const Record = () => {
             <div className="col-12">
               <div className="record_box d-flex align-items-center justify-content-center gap-4">
                 <div className="hexagon overflow-hidden p-1 d-md-block d-none hover-zoom">
-                  <img
-                    src="./img/Records/limca_1.webp"
+                  <Image
+                    src="/img/Records/limca_1.webp"
+                    layout="responsive"
+                    width={0}
+                    height={0}
+                    style={{ width: "100%", height: "100%" }}
+                    alt="limca_1-img"
                     className="img-fluid d-inline-block w-100 h-100"
-                    alt=""
                   />
                 </div>
                 <div className="hexagon overflow-hidden p-1 d-md-block d-none hover-zoom">
-                  <img
-                    src="./img/Records/limca_3.webp"
+                  <Image
+                    src="/img/Records/limca_3.webp"
+                    layout="responsive"
+                    width={0}
+                    height={0}
+                    style={{ width: "100%", height: "100%" }}
+                    alt="limca_3-img"
                     className="img-fluid d-inline-block w-100 h-100"
-                    alt=""
                   />
                 </div>
                 <div className="hexagon overflow-hidden p-1 hover-zoom">
-                  <img
-                    src="./img/Records/limca_10.webp"
+                  <Image
+                    src="/img/Records/limca_10.webp"
+                    layout="responsive"
+                    width={0}
+                    height={0}
+                    style={{ width: "100%", height: "100%" }}
+                    alt="limca_10-img"
                     className="img-fluid d-inline-block w-100 h-100"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="record_box d-flex align-items-center justify-content-center gap-4">
-                <div className="hexagon overflow-hidden p-1 hover-zoom">
-                  <img
-                    src="./img/Records/redfm_1.webp"
-                    className="img-fluid d-inline-block w-100 h-100"
-                    alt=""
-                  />
-                </div>
-                <div className="hexagon overflow-hidden p-1 hover-zoom">
-                  <img
-                    src="./img/Records/redfm_4.webp"
-                    className="img-fluid d-inline-block w-100 h-100"
-                    alt=""
                   />
                 </div>
               </div>
               <div className="record_box d-flex align-items-center justify-content-center gap-4">
                 <div className="hexagon overflow-hidden p-1 hover-zoom">
-                  <img
-                    src="./img/Records/certificate.webp"
+                  <Image
+                    src="/img/Records/redfm_1.webp"
+                    layout="responsive"
+                    width={0}
+                    height={0}
+                    style={{ width: "100%", height: "100%" }}
+                    alt="redfm_1-img"
                     className="img-fluid d-inline-block w-100 h-100"
-                    alt=""
+                  />
+                </div>
+                <div className="hexagon overflow-hidden p-1 hover-zoom">
+                  <Image
+                    src="/img/Records/redfm_4.webp"
+                    layout="responsive"
+                    width={0}
+                    height={0}
+                    style={{ width: "100%", height: "100%" }}
+                    alt="redfm_4-img"
+                    className="img-fluid d-inline-block w-100 h-100"
+                  />
+                </div>
+              </div>
+              <div className="record_box d-flex align-items-center justify-content-center gap-4">
+                <div className="hexagon overflow-hidden p-1 hover-zoom">
+                  <Image
+                    src="/img/Records/certificate.webp"
+                    layout="responsive"
+                    width={0}
+                    height={0}
+                    style={{ width: "100%", height: "100%" }}
+                    alt="certificate-img"
+                    className="img-fluid d-inline-block w-100 h-100"
                   />
                 </div>
               </div>
@@ -69,7 +94,7 @@ const Record = () => {
           </div>
           <div className="row mt-5">
             <div className="col-md-12 text-center">
-              <Link href={"/record"}>
+              <Link href={"/Record"}>
                 <button className="newbtn">View More Record</button>
               </Link>
             </div>

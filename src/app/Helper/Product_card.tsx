@@ -1,5 +1,6 @@
 import React from "react";
 import { gola } from "./types";
+import Image from "next/image";
 
 interface ProductCardProps {
   Mydata: gola;
@@ -10,7 +11,16 @@ const ProductCards: React.FC<ProductCardProps> = ({ Mydata }) => {
     <div className="col-lg-4 col-md-4">
       <div className="card_box position-relative overflow-hidden">
         <div className="card_img hover-zoom hover-overlay">
-          <img src={gola_img} className="img-fluid w-100" alt={gola_name} />
+          <Image
+            src={gola_img}
+            layout="responsive"
+            width={0}
+            height={0}
+            style={{ width: "100%", height: "100%" }}
+            alt={gola_name}
+            className="img-fluid w-100"
+          />
+          {/* <img src={gola_img} className="img-fluid w-100" alt={gola_name} /> */}
           <div
             className="mask"
             style={{ backgroundColor: "hsla(0,0%,0%,0.6)" }}

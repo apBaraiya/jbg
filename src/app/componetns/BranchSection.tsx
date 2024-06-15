@@ -40,7 +40,7 @@ const BranchSection: React.FC<BranchSectionProps> = ({franchises,limit,ViewMoreb
               })}
             {ViewMorebtn && (
               <div className="col-md-12 text-center mt-5 ">
-                <Link href={"/franchise"}><button className="newbtn">More Branch</button></Link>
+                <Link href={"/Franchise"}><button className="newbtn">More Branch</button></Link>
               </div>
             )}
           </div>

@@ -34,7 +34,7 @@ const ProductSection: React.FC<ProductProps> = ({
             })}
             {ViewMorebtn && (
               <div className="col-md-12 text-center mt-5 ">
-                <Link href={"/product"}>
+                <Link href={"/Product"}>
                   <button className="newbtn">More Product</button>
                 </Link>
               </div>

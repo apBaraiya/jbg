@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const page = () => {
@@ -5,15 +6,23 @@ const page = () => {
     <>
       {/* Breadcrumbs Section */}
       <section className="breadcrumbs">
-        <img
-          src="./img/About/i_love_jbg.gif"
-          className="img-fluid hidden-mobile"
+        <Image
+          src="/img/About/i_love_jbg.gif"
+          layout="responsive"
+          width={0}
+          height={0}
+          style={{ width: "100%", height: "100%" }}
           alt="i_love_jbg"
+          className="img-fluid hidden-mobile"
         />
-        <img
-          src="./img/About/about_baner_small.webp"
-          className="img-fluid visible-mobile"
+        <Image
+          src="/img/About/about_baner_small.webp"
+          width={0}
+          layout="responsive"
+          height={0}
+          style={{ width: "100%", height: "100%" }}
           alt="samll_i_love_jbg"
+          className="img-fluid visible-mobile"
         />
       </section>
       <section className="about_page pt-5">
@@ -21,9 +30,7 @@ const page = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="section_title text-white d-flex align-items-center justify-content-center pb-5">
-                <h2 className="title fs-1 fw-bold d-inline-block">
-                  About Us
-                </h2>
+                <h2 className="title fs-1 fw-bold d-inline-block">About Us</h2>
               </div>
             </div>
             <div className="col-md-12">

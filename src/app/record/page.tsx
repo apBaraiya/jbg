@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -50,7 +51,7 @@ const Record = () => {
     { original: "./img/Records/redfm_10.webp" },
     { original: "./img/Records/redfm_11.webp" },
     { original: "./img/Records/redfm_12.webp" },
-];
+  ];
 
   const openGallery = (index: number) => {
     setCurrentIndex(index);
@@ -83,10 +84,14 @@ const Record = () => {
                     className="hexagon small_hexagon overflow-hidden p-1 hover-zoom"
                     onClick={() => openGallery(index)}
                   >
-                    <img
+                    <Image
                       src={image.original}
-                      className="img-fluid d-inline-block w-100 h-100"
+                      layout="responsive"
+                      width={0}
+                      height={0}
+                      style={{ width: "100%", height: "100%" }}
                       alt={`Record ${index + 1}`}
+                      className="img-fluid d-inline-block w-100 h-100"
                     />
                   </div>
                 ))}
