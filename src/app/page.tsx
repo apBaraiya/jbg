@@ -1,12 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Slider from "./Componetns/Slider";
 import data from "@/app/api/data.json";
 import BranchSection from "./Componetns/BranchSection";
 import ProductSection from "./Componetns/ProductSection";
 import Service from "./Componetns/Service";
 import Record from "./Componetns/Record";
+import Slider from "./Componetns/Slider";
 
 const Home: React.FC = () => {
   const [product] = useState(data.golas);
