@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Slider from "./Componetns/Slider";
 import data from "@/app/api/data.json";
-import BranchSection from "@/app/Componetns/BranchSection";
-import ProductSection from "@/app/Componetns/ProductSection";
+import BranchSection from "./Componetns/BranchSection";
+import ProductSection from "./Componetns/ProductSection";
 import Service from "./Componetns/Service";
 import Record from "./Componetns/Record";
 
