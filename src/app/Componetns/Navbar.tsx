@@ -1,11 +1,27 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const pathname = usePathname();
+
+  // Use useRef to create references to DOM elements
+  const menuIconRef = useRef<HTMLLIElement>(null);
+  const navbarRef = useRef<HTMLUListElement>(null);
+
+  // Use useState for toggling classes
+  const [isActive, setIsActive] = useState(false);
+
+  // Handle click event
+  const handleClick = () => {
+    if (menuIconRef.current && navbarRef.current) {
+      menuIconRef.current.classList.toggle("fs-x");
+      navbarRef.current.classList.toggle("active");
+      setIsActive(!isActive); // Toggle state to manage classes
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,97 +44,43 @@ const Navbar = () => {
 
   return (
     <>
-      <header>
-        <nav className="navbar navbar-expand-lg">
-          <div className="container">
-            <Link href="/" className="navbar-brand">
-              <Image
-                src="/img/jbg.png"
-                width={100}
-                height={100}
-                alt="logo"
-                className="img-fluid"
-              />
+      <header className="header position-fixed top-0 start-0 w-100 d-flex justify-content-between align-content-center">
+        <Link href="/" className="navbar-brand">
+          <Image src="/img/jbg.png" width={100} height={100} alt="logo" className="img-fluid" />
+        </Link>
+        <i className={`fa-solid fa-bars-staggered ${isActive ? "fs-x" : ""}`} id="menu-icon" ref={menuIconRef} onClick={handleClick}></i>
+        <ul className={`list-unstyled m-0 navbar_nav align-items-center justify-content-center ${isActive ? "active" : ""}`} ref={navbarRef}>
+          <li>
+            <Link href="/" className={`nav-link ${pathname === "/" ? "active" : ""}`} aria-current="page">
+              Home
             </Link>
-            <button
-              className="navbar-toggler shadow-none bg-white"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div
-              className="collapse navbar-collapse position-relative"
-              id="navbarSupportedContent"
-            >
-              <ul className="navbar-nav ms-auto mb-2 list-unstyled mb-lg-0">
-                <li className="nav-item">
-                  <Link
-                    href="/"
-                    className={`nav-link ${pathname === "/" ? "active" : ""}`}
-                    aria-current="page"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    href="/About"
-                    className={`nav-link ${
-                      pathname === "/About" ? "active" : ""
-                    }`}
-                  >
-                    About Us
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    href="/Product"
-                    className={`nav-link ${
-                      pathname === "/Product" ? "active" : ""
-                    }`}
-                  >
-                    Our Product
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    href="/Franchise"
-                    className={`nav-link ${
-                      pathname === "/Franchise" ? "active" : ""
-                    }`}
-                  >
-                    Our Franchise
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    href="/Record"
-                    className={`nav-link ${
-                      pathname === "/Record" ? "active" : ""
-                    }`}
-                  >
-                    Record
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    href="/Video"
-                    className={`nav-link ${
-                      pathname === "/Video" ? "active" : ""
-                    }`}
-                  >
-                    Video
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+          </li>
+          <li>
+            <Link href="/About" className={`nav-link ${pathname === "/About" ? "active" : ""}`}>
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link href="/Product" className={`nav-link ${pathname === "/Product" ? "active" : ""}`}>
+              Our Product
+            </Link>
+          </li>
+          <li>
+            <Link href="/Franchise" className={`nav-link ${pathname === "/Franchise" ? "active" : ""}`}>
+              Our Franchise
+            </Link>
+          </li>
+          <li>
+            <Link href="/Record" className={`nav-link ${pathname === "/Record" ? "active" : ""}`}>
+              Record
+            </Link>
+          </li>
+          <li>
+            <Link href="/Video" className={`nav-link ${pathname === "/Video" ? "active" : ""}`}>
+              Video
+            </Link>
+          </li>
+        </ul>
       </header>
     </>
   );
