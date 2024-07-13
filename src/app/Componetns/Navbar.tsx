@@ -16,31 +16,19 @@ const Navbar = () => {
 
   // Handle click event
   const handleClick = () => {
-    if (menuIconRef.current && navbarRef.current) {
-      menuIconRef.current.classList.toggle("fs-x");
-      navbarRef.current.classList.toggle("active");
-      setIsActive(!isActive); // Toggle state to manage classes
-    }
+    setIsActive(!isActive);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const nav = document.querySelector("header");
-      if (document.documentElement.scrollTop > 20) {
-        nav?.classList.add("sticky");
-      } else {
-        nav?.classList.remove("sticky");
-      }
-    };
-
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const closeNavbar = () => {
+    setIsActive(false);
+  };
+  // const handleClick = () => {
+  //   if (menuIconRef.current && navbarRef.current) {
+  //     menuIconRef.current.classList.toggle("fs-x");
+  //     navbarRef.current.classList.toggle("active");
+  //     setIsActive(!isActive); // Toggle state to manage classes
+  //   }
+  // };
 
   return (
     <>
@@ -51,32 +39,32 @@ const Navbar = () => {
         <i className={`fa-solid fa-bars-staggered ${isActive ? "fs-x" : ""}`} id="menu-icon" ref={menuIconRef} onClick={handleClick}></i>
         <ul className={`list-unstyled m-0 navbar_nav align-items-center justify-content-center ${isActive ? "active" : ""}`} ref={navbarRef}>
           <li>
-            <Link href="/" className={`nav-link ${pathname === "/" ? "active" : ""}`} aria-current="page">
+            <Link href="/" className={`nav-link ${pathname === "/" ? "active" : ""}`} onClick={closeNavbar} aria-current="page">
               Home
             </Link>
           </li>
           <li>
-            <Link href="/About" className={`nav-link ${pathname === "/About" ? "active" : ""}`}>
+            <Link href="/About" className={`nav-link ${pathname === "/About" ? "active" : ""}`} onClick={closeNavbar}>
               About Us
             </Link>
           </li>
           <li>
-            <Link href="/Product" className={`nav-link ${pathname === "/Product" ? "active" : ""}`}>
+            <Link href="/Product" className={`nav-link ${pathname === "/Product" ? "active" : ""}`} onClick={closeNavbar}>
               Our Product
             </Link>
           </li>
           <li>
-            <Link href="/Franchise" className={`nav-link ${pathname === "/Franchise" ? "active" : ""}`}>
+            <Link href="/Franchise" className={`nav-link ${pathname === "/Franchise" ? "active" : ""}`} onClick={closeNavbar}>
               Our Franchise
             </Link>
           </li>
           <li>
-            <Link href="/Record" className={`nav-link ${pathname === "/Record" ? "active" : ""}`}>
+            <Link href="/Record" className={`nav-link ${pathname === "/Record" ? "active" : ""}`} onClick={closeNavbar}>
               Record
             </Link>
           </li>
           <li>
-            <Link href="/Video" className={`nav-link ${pathname === "/Video" ? "active" : ""}`}>
+            <Link href="/Video" className={`nav-link ${pathname === "/Video" ? "active" : ""}`} onClick={closeNavbar}>
               Video
             </Link>
           </li>

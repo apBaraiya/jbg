@@ -31,7 +31,7 @@ const BranchSection: React.FC<BranchSectionProps> = ({franchises,limit,ViewMoreb
                 const columnClass =
                   index === 0
                     ? "col-lg-12 col-md-6 main_branch"
-                    : "col-lg-4 col-md-4";
+                    : "col-lg-4 col-md-6";
                 return (
                   <div key={index} className={columnClass}>
                     <Branch location={elem} />

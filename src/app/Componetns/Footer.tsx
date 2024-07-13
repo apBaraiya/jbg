@@ -109,7 +109,7 @@ const footer = () => {
           <div className="col-lg-4 col-md-6">
             <div className="contact_info">
               <h2 className="fs-4 fw-bold text-uppercase title">Contact Us</h2>
-              <ul className="p-0 me-0">
+              <ul className="p-0 m-0">
                 <li className="pb-2">
                   <Link href={"#"} className="d-flex gap-2">
                     <span>

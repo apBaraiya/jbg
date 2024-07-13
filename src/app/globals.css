@@ -125,50 +125,9 @@ ul {
   outline-offset: 0.05em;
 }
 
-/* navbar css */
-/* header {
-  position: sticky;
-  top: 0px;
-  z-index: 1000;
-  background-color: transparent;
-  transition: background-color 0.5s ease;
-}
-
-header.sticky {
-  background-color: var(--primary-color);
-  padding: 0;
-}
-
-header.sticky .navbar .navbar-brand {
-  max-width: 100px;
-  width: 100%;
-}
-
-.navbar .navbar-brand {
-  max-width: 150px;
-  width: 100%;
-  transition: all 0.5s ease;
-}
-
-.navbar .navbar-brand img {
-  height: 100%;
-  width: 100%;
-}
-
-.navbar ul li {
-  list-style: none;
-  padding-right: 20px;
-}
-
-.navbar ul li a {
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--text-color);
-} */
-
 /* new header css */
 .header {
-  padding: 20px 100px;
+  padding: 15px 100px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
@@ -187,7 +146,7 @@ header.sticky .navbar .navbar-brand {
 .header:hover::before {
   left: 100%;
 }
-.navbar_nav{
+.navbar_nav {
   display: flex;
 }
 
@@ -206,39 +165,6 @@ header.sticky .navbar .navbar-brand {
   color: #fff;
   display: none;
 }
-/* BREAKPOINTS */
-@media (max-width: 992px) {
-  .header {
-    padding: 1.25rem 4%;
-  }
-}
-@media (max-width: 768px) {
-  #menu-icon {
-    display: block;
-  }
- 
-  .navbar_nav.active {
-    padding: 10px 20px;
-    display: block !important;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(20px);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  }
-  .navbar_nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 0.5rem 4%;
-    display: none !important;
-  }
-  .navbar_nav a {
-    display: block;
-    margin: 1.5rem 0;
-  }
-}
-
-/* end css */
 
 /* card section css */
 .card_section .card_box {
@@ -587,12 +513,38 @@ header.sticky .navbar .navbar-brand {
   }
 }
 @media (max-width: 992px) {
+  .header {
+    padding: 1.25rem 4%;
+  }
   .branch_section .main_branch .card {
     max-width: 100% !important;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  #menu-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar_nav.active {
+    padding: 10px 20px;
+    display: block !important;
+    background: rgba(33, 36, 40, 0.8);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  .navbar_nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 4%;
+    display: none !important;
+  }
+  .navbar_nav a {
+    display: block;
+    margin: 1.5rem 0;
+  }
   .footer_section .contact_info p.email {
     overflow: hidden;
     overflow-wrap: break-word;
