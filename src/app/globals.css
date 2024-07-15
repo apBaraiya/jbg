@@ -95,7 +95,31 @@ ul {
   margin: auto;
   background-color: var(--text-color);
 }
-
+.about_page,
+.product_page,
+.franchise_page,
+.record_page,
+.video_section {
+  background: var(--after-background);
+  z-index: 1;
+}
+.about_page::after,
+.product_page::after,
+.franchise_page::after,
+.record_page::after,
+.video_section::after {
+  display: none;
+}
+.franchise_page,
+.product_page,
+.record_page,
+.video_section {
+  margin-top: 0px !important;
+  padding-top: 100px !important;
+}
+.modal-backdrop.show{
+  display: none !important;
+}
 .newbtn {
   --b: 3px;
   --s: 0.45em;
@@ -128,10 +152,13 @@ ul {
 /* new header css */
 .header {
   padding: 15px 100px;
+
+  z-index: 100;
+}
+.header.sticky {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  z-index: 100;
 }
 .header::before {
   content: "";
@@ -164,6 +191,154 @@ ul {
   font-size: 36px;
   color: #fff;
   display: none;
+}
+
+/* slider css */
+.hero_section {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/img/slider_img/jbg_table.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 2;
+}
+.mySwiper .swiper-wrapper {
+  align-items: center;
+  justify-content: center;
+}
+.swiper {
+  width: 100%;
+  margin: 0 auto;
+}
+.mySwiper2 {
+  background-image: url(/img/slider_img/Bg-black.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 600px;
+}
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.mySwiper2 {
+  height: 100vh;
+  width: 85%;
+}
+
+.mySwiper {
+  box-sizing: border-box;
+  padding: 10px 0;
+  top: 0;
+  left: 5%;
+  width: 15%;
+  height: 100%;
+}
+
+.mySwiper .swiper-slide {
+  width: 150px;
+  height: 100%;
+  opacity: 0.4;
+}
+.swiper-slide.swiper-slide-visible.swiper-slide-fully-visible {
+  height: 130px !important;
+  width: 130px;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  opacity: 1;
+}
+.mySwiper .swiper-slide-thumb-active {
+  background-color: var(--main-bg-color) !important;
+}
+
+.mySwiper2 .swiper-slide img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+.mySwiper .swiper-slide img {
+  width: 80px;
+  height: 80px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: auto !important;
+  bottom: 10%;
+  color: var(--text-color) !important;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 43%) !important;
+  right: auto;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 45%) !important;
+  left: auto;
+}
+
+@media (max-width: 870px) {
+  .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible {
+    height: 110px !important;
+    width: 110px;
+  }
+}
+@media (max-width: 768px) {
+  .mySwiper2 {
+    background-size: contain;
+  }
+  .mySwiper {
+    width: auto;
+  }
+  .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible {
+    height: 100px !important;
+    width: 100px;
+  }
+  .mySwiper2 .swiper-slide img {
+    height: 200px;
+    width: 200px;
+  }
+  .mySwiper .swiper-slide img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 641px) {
+  .mySwiper {
+    top: auto;
+    bottom: 10%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+  }
+  .mySwiper2 .swiper-slide img {
+    height: 150px;
+    width: 150px;
+  }
+  .mySwiper .swiper-slide {
+    width: 100px !important;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 0%) !important;
+    left: auto !important;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 0%) !important;
+    right: auto !important;
+  }
+
 }
 
 /* card section css */
@@ -459,7 +634,7 @@ ul {
 .footer_section h2.title::after {
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: -5px;
   left: 0;
   width: 50px;
   height: 3px;

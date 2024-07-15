@@ -64,7 +64,7 @@ const Record = () => {
 
   return (
     <>
-      <section className="record_section unipadding">
+      <section className="record_section record_page comman_Section unipadding">
         <div className="container">
           <div className="row">
             <div className="col-md-12">

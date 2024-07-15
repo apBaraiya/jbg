@@ -32,7 +32,7 @@ const VideoPage: React.FC = () => {
   }, []);
 
   return (
-    <section className="video_section">
+    <section className="video_section comman_Section unipadding">
       <div className="container">
       <div className="row">
             <div className="col-md-12">

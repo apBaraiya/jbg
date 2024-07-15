@@ -8,23 +8,18 @@ interface ProductProps {
   product: gola[];
   limit?: number;
   ViewMorebtn: boolean;
+  additionalClassName?: string;
 }
 
-const ProductSection: React.FC<ProductProps> = ({
-  product,
-  limit,
-  ViewMorebtn,
-}) => {
+const ProductSection: React.FC<ProductProps> = ({ product, limit, ViewMorebtn, additionalClassName = "" }) => {
   return (
     <>
-      <section className="card_section unipadding position-relative">
+      <section className={`card_section unipadding position-relative ${additionalClassName}`}>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="section_title text-white d-flex align-items-center justify-content-center pb-5">
-                <h2 className="title fs-1 fw-bold d-inline-block">
-                  Our Product
-                </h2>
+                <h2 className="title fs-1 fw-bold d-inline-block">Our Product</h2>
               </div>
             </div>
           </div>

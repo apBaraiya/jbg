@@ -6,7 +6,7 @@ import BranchSection from "./Componetns/BranchSection";
 import ProductSection from "./Componetns/ProductSection";
 import Service from "./Componetns/Service";
 import Record from "./Componetns/Record";
-import Slider from "./Componetns/Slider";
+import Slider2 from "./Componetns/Slider2";
 
 const Home: React.FC = () => {
   const [product] = useState(data.golas);
@@ -19,7 +19,8 @@ const Home: React.FC = () => {
     <>
       {/* Hero section */}
       <section className="hero_section">
-        <Slider />
+        {/* <Slider /> */}
+        <Slider2 />
       </section>
       {/* card section */}
       <ProductSection product={product} limit={6} ViewMorebtn={true} />

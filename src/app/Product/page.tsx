@@ -6,7 +6,7 @@ const Page = () => {
   const [product] = useState(data.golas);
   return (
     <>
-      <ProductSection product={product} ViewMorebtn={false}/>
+      <ProductSection product={product} ViewMorebtn={false} additionalClassName="comman_Section product_page"/>
     </>
   );
 };

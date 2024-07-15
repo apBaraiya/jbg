@@ -25,11 +25,11 @@ const page = () => {
           className="img-fluid visible-mobile"
         />
       </section>
-      <section className="about_page pt-5">
+      <section className="about_page comman_Section unipadding  pt-5">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="section_title text-white d-flex align-items-center justify-content-center pb-5">
+              <div className="section_title text-white d-flex align-items-center justify-content-center pb-md-5">
                 <h2 className="title fs-1 fw-bold d-inline-block">About Us</h2>
               </div>
             </div>

@@ -22,13 +22,25 @@ const Navbar = () => {
   const closeNavbar = () => {
     setIsActive(false);
   };
-  // const handleClick = () => {
-  //   if (menuIconRef.current && navbarRef.current) {
-  //     menuIconRef.current.classList.toggle("fs-x");
-  //     navbarRef.current.classList.toggle("active");
-  //     setIsActive(!isActive); // Toggle state to manage classes
-  //   }
-  // };
+  useEffect(() => {
+    const handleScroll = () => {
+      const nav = document.querySelector("header");
+      if (document.documentElement.scrollTop > 20) {
+        nav?.classList.add("sticky");
+      } else {
+        nav?.classList.remove("sticky");
+      }
+    };
+
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
 
   return (
     <>

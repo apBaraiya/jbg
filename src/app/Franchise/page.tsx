@@ -7,7 +7,7 @@ const ProductPage = () => {
   const [franchises] = useState(data.locations);
   return (
     <>
-      <BranchSection  franchises={franchises} ViewMorebtn={false} />
+      <BranchSection  franchises={franchises} ViewMorebtn={false} additionalClassName="franchise_page"/>
     </>
   );
 };
