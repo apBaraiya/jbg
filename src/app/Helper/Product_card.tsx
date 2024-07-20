@@ -27,9 +27,9 @@ const ProductCards: React.FC<ProductCardProps> = ({ Mydata }) => {
           ></div>
         </div>
         <div className="card_content text-center d-inline-block text-white position-absolute top-0 start-50 opacity-0 translate-middle z-3">
-          <h5 className="fs-4 fw-bold text-white text-capitalize">
+          <h4 className="fs-4 fw-bold text-white text-capitalize">
             {gola_name}
-          </h5>
+          </h4>
         </div>
       </div>
     </div>
