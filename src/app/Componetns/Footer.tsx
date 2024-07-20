@@ -24,27 +24,27 @@ const footer = () => {
                   </Link>
                 </li>
                 <li className="pb-1">
-                  <Link href={"/about"} className="position-relative d-inline-block fs-6">
+                  <Link href={"/About"} className="position-relative d-inline-block fs-6">
                     About Us
                   </Link>
                 </li>
                 <li className="pb-1">
-                  <Link href={"/product"} className="position-relative d-inline-block fs-6">
+                  <Link href={"/Product"} className="position-relative d-inline-block fs-6">
                     Our Product
                   </Link>
                 </li>
                 <li className="pb-1">
-                  <Link href={"/franchise"} className="position-relative d-inline-block fs-6">
+                  <Link href={"/Franchise"} className="position-relative d-inline-block fs-6">
                     Our Franchise
                   </Link>
                 </li>
                 <li className="pb-1">
-                  <Link href={"/record"} className="position-relative d-inline-block fs-6">
+                  <Link href={"/Record"} className="position-relative d-inline-block fs-6">
                     Record
                   </Link>
                 </li>
                 <li className="pb-1">
-                  <Link href={"/video"} className="position-relative d-inline-block fs-6">
+                  <Link href={"/Video"} className="position-relative d-inline-block fs-6">
                     Video
                   </Link>
                 </li>
