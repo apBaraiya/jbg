@@ -56,17 +56,17 @@ const footer = () => {
               <h2 className="fs-4 fw-bold text-uppercase title mb-4">FOLLOW US</h2>
               <ul className="p-0 m-0 d-flex gap-2">
                 <li>
-                  <Link href={"https://www.facebook.com/JayBhavaniDryFruitDishGola/"} target="_blank" className="facebook_icon d-inline-block py-1 me-1 rounded-3 text-center">
+                  <Link href={"https://www.facebook.com/JayBhavaniDryFruitDishGola/"} target="_blank" aria-label="Facebook" className="facebook_icon d-inline-block py-1 me-1 rounded-3 text-center">
                     <i className="fa-brands fa-facebook-f"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"https://x.com/bhavani_gola?s=08"} target="_blank" className="twitter_icon d-inline-block py-1 me-1 rounded-3 text-center">
+                  <Link href={"https://x.com/bhavani_gola?s=08"} target="_blank" aria-label="Twitter" className="twitter_icon d-inline-block py-1 me-1 rounded-3 text-center">
                     <i className="fa-brands fa-x-twitter"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"https://www.instagram.com/jay_bhavani_dryfruit_dish_gola/"} target="_blank" className="insta_icon d-inline-block py-1 rounded-3 text-center">
+                  <Link href={"https://www.instagram.com/jay_bhavani_dryfruit_dish_gola/"} aria-label="Instagram" target="_blank" className="insta_icon d-inline-block py-1 rounded-3 text-center">
                     <i className="fa-brands fa-instagram"></i>
                   </Link>
                 </li>
