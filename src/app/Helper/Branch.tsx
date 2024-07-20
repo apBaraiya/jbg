@@ -24,10 +24,10 @@ const Branch: React.FC<LocationCardProps> = ({ location }) => {
           />
         </div>
         <div className="card-body text-white text-center">
-          <h5 className="card-title fs-5 fw-bold text-center">
+          <h3 className="card-title fs-5 fw-bold text-center">
             <LocationOnIcon />
             {title}
-          </h5>
+          </h3>
           <p className="card-text">{desc}</p>
         </div>
         <div className="card_btn d-flex flex-wrap align-items-center justify-content-between">
