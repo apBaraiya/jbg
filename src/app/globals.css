@@ -9,8 +9,6 @@
   --color-lightn: #c4cfde;
   --primary-color: #ee2b2b;
   --main-bg-color: #212428;
-  /* --background-color1: linear-gradient(145deg, #1e2024, #23272b); */
-  /* --before-background: linear-gradient(to right bottom, #212428, #16181c); */
   --after-background: #1c1e22;
   --paragraf-color: #d4d6d9;
   --text-color: #fff;
@@ -178,18 +176,21 @@ ul {
 }
 
 .navbar_nav a {
-  color: #fff;
+  color: var(--text-color);
   font-size: 18px;
   text-decoration: none;
   margin-left: 27px;
   transition: 0.3s;
 }
+.navbar_nav a.active{
+  color: var(--primary-color);
+}
 .navbar_nav a:hover {
-  color: #f00;
+  color: var(--primary-color);
 }
 #menu-icon {
   font-size: 36px;
-  color: #fff;
+  color: var(--text-color);
   display: none;
 }
 
@@ -247,7 +248,7 @@ ul {
 .swiper-slide.swiper-slide-visible.swiper-slide-fully-visible {
   height: 130px !important;
   width: 130px;
-  background-color: #fff;
+  background-color: var(--text-color);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   opacity: 1;
@@ -394,7 +395,7 @@ ul {
   will-change: transform;
   border: 1px solid transparent;
   transform: scale(1.02);
-  color: #fff;
+  color: var(--text-color);
 }
 .branch_section .card .card_btn a.full_btn::after,
 .branch_section .card .card_btn a.half_btn::after {
@@ -435,7 +436,7 @@ ul {
   bottom: 0;
   display: block;
   margin: auto;
-  background: linear-gradient(to bottom, hsla(0, 0%, 90%, 0) 0, #ee2b2b 10%, #ee2b2b 90%, hsla(0, 0%, 90%, 0) 100%);
+  background: linear-gradient(to bottom, hsla(0, 0%, 90%, 0) 0, var(--primary-color) 10%, var(--primary-color) 90%, hsla(0, 0%, 90%, 0) 100%);
   width: 3px;
 }
 
@@ -601,7 +602,7 @@ ul {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: #fff;
+  background: var(--text-color);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -679,7 +680,7 @@ ul {
 
 .footer_section .contact_info ul li a span i {
   font-size: 20px;
-  color: #ee2b2b;
+  color: var(--primary-color);
 }
 
 @media (max-width: 1200px) {
